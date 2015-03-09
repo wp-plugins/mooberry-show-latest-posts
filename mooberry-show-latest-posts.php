@@ -1,7 +1,7 @@
 <?php
  /*
     Plugin Name: Mooberry Show Latest Posts
-    Plugin URI:
+    Plugin URI: https://wordpress.org/plugins/mooberry-show-latest-posts/
     Description: Show latest blog posts on the static front page
     Author: Mooberry Dreams
     Version: 1.0

@@ -1,7 +1,6 @@
 === Mooberry Show Latest Posts ===
 Contributors: mooberrydreams
 Author URI: http://www.mooberrydreams.com/
-Plugin URI: https://wordpress.org/plugins/mooberry-show-latest-posts/
 Tags: archive, most recent posts, static front page, latest posts, front page, post, posts
 Requires at least: 3.3.0
 Tested up to: 4.1.1
