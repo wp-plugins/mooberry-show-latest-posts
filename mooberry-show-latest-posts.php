@@ -4,7 +4,7 @@
     Plugin URI: https://wordpress.org/plugins/mooberry-show-latest-posts/
     Description: Show latest blog posts on the static front page
     Author: Mooberry Dreams
-    Version: 1.0
+    Version: 1.1
     Author URI: http://www.mooberrydreams.com/
 	Text Domain: mooberry-show-latest-posts
 	Domain Path: /languages/
@@ -59,14 +59,14 @@
 					return $content;
 				}
 				$width = floor(100/$options['mbdslp_number']);
-				 $content .= '<!-- Latest News -->			
-					<article class="page type-page status-publish hentry">
-						<div class="title" >
+					 $content .= '<!-- Latest News -->			
+					<div ID="mbdslp" class="page type-page status-publish hentry">
+						<div ID="mbdslp_title" class="title" style="margin-bottom:10px;" >
 							<h2 class="entry-title">' . esc_html($options['mbdslp_title']) . '</h2>
 						</div>';
 						//<div class="entry-content">';
 				if ($options['mbdslp_display'] == 'horizontal') {
-					$content .= '<table><tr style="vertical-align:top">';
+					$content .= '<table ID="mbdslp_table"><tr style="vertical-align:top">';
 					$counter = 0;
 				}
 				$args = array( 'posts_per_page' => $options['mbdslp_number'] );
@@ -76,11 +76,11 @@
 					if ($options['mbdslp_display'] == 'horizontal') {
 						$content .= '<td style="width:' . $width . '%">';
 					}
-					$content .= '<h3 class="entry-title">';
+					$content .= '<h3 class="mbdslp_post_title" class="entry-title" style="margin:20px 0 5px 0;">';
 					$content .=  get_the_title(); 
-					$content .= '</h3>';
+					$content .= '</h3><span class="mbdslp_post_text">';
 					$content .=   wp_trim_words( esc_attr(strip_shortcodes(strip_tags( stripslashes( get_the_content())))), $num_words = 55, $more = NULL ) ;
-					$content .= ' <A HREF="' . get_the_permalink() . '">' . esc_html($options['mbdslp_readmore']) . '</a>';
+					$content .= ' <A class="mbslp_read_more" HREF="' . get_the_permalink() . '">' . esc_html($options['mbdslp_readmore']) . '</a></span>';
 					if ($options['mbdslp_display'] == 'horizontal') {
 						$content .= '</td>';
 						$counter++;
@@ -94,7 +94,7 @@
 					$content .= '</tr></table>';
 				}
 				//$content .= '</div>';
-				$content .= '</article>';
+				$content .= '</div>';
 				$content .= '<!-- end of latest news -->';
 				wp_reset_postdata();
 			}
