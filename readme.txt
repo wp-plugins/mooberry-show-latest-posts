@@ -16,16 +16,24 @@ When you have your website set to use a static front page, you may want to show 
 
 This plugin will show the title, excerpt, and link of your most recent blog posts at the bottom of your front page. You can customize the following options:  
 * The number of posts to show  
+
 * Whether the posts should display horizontally or vertically  
+
 * The text of the "Read More" link  
+
 * The title of the section (default: "Latest Posts")  
 
 CSS can be used to adjust styling. The following IDs and classes are used:  
 * mbdslp (ID) - wraps the entire Latest Posts output  
+
 * mbdslp_title (ID) - title of the section (ie "Latest Posts")  
+
 * mbdslp_table (ID) - the table used for horizontal display  
+
 * mbdslp_post_title (class) - title of the individual post  
+
 * mbdslp_post_text (class) - excerpt of the individual post  
+
 * mbslp_read_more (class) - individual "Read More" link  
 
 == Installation ==
