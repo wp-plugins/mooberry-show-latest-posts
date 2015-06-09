@@ -3,8 +3,8 @@ Contributors: mooberrydreams
 Author URI: http://www.mooberrydreams.com/
 Tags: archive, most recent posts, static front page, latest posts, front page, post, posts
 Requires at least: 3.3.0
-Tested up to: 4.1.1
-Stable tag: 1.0
+Tested up to: 4.2.2
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,6 +20,14 @@ This plugin will show the title, excerpt, and link of your most recent blog post
 * The text of the "Read More" link  
 * The title of the section (default: "Latest Posts")  
 
+CSS can be used to adjust styling. The following IDs and classes are used:  
+* mbdslp (ID) - wraps the entire Latest Posts output  
+* mbdslp_title (ID) - title of the section (ie "Latest Posts")  
+* mbdslp_table (ID) - the table used for horizontal display  
+* mbdslp_post_title (class) - title of the individual post  
+* mbdslp_post_text (class) - excerpt of the individual post  
+* mbslp_read_more (class) - individual "Read More" link  
+
 == Installation ==
 
 1. Upload `mooberry-show-latest-posts` directory to the `/wp-content/plugins/` directory
@@ -33,6 +41,10 @@ This plugin will show the title, excerpt, and link of your most recent blog post
 3. The posts displayed vertically.
 
 == Changelog ==
+
+= 1.1 =   
+* Wrapped entire output in a div  
+* Added IDs to individual elements  
 
 = 1.0 =
 * Initial Version
