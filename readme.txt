@@ -14,7 +14,8 @@ Show latest blog posts on the static front page. Customize number of posts and d
 
 When you have your website set to use a static front page, you may want to show a list of your most recent blog posts, too.
 
-This plugin will show the title, excerpt, and link of your most recent blog posts at the bottom of your front page. You can customize the following options:  
+This plugin will show the title, excerpt, and link of your most recent blog posts at the bottom of your front page. You can customize the following options: 
+
 * The number of posts to show  
 
 * Whether the posts should display horizontally or vertically  
@@ -24,6 +25,7 @@ This plugin will show the title, excerpt, and link of your most recent blog post
 * The title of the section (default: "Latest Posts")  
 
 CSS can be used to adjust styling. The following IDs and classes are used:  
+
 * mbdslp (ID) - wraps the entire Latest Posts output  
 
 * mbdslp_title (ID) - title of the section (ie "Latest Posts")  
